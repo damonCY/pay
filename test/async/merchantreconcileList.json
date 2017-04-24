@@ -1,0 +1,62 @@
+{
+	"code": 0,
+	"msg": "SUCCESS",
+	"metadata": {
+		"merchantName": {
+			"title": "",
+			"type": "String",
+			"display": "yes"
+		},
+		"merchantId": {
+			"title": "商户号",
+			"type": "String",
+			"display": "no"
+		},
+		"mrcDate": {
+			"title": "交易日期",
+			"type": "String",
+			"display": "yes"
+		},
+		"accountDesc": {
+			"title": "支付渠道",
+			"type": "String",
+			"display": "yes"
+		},
+		"payCount": {
+			"title": "交易成功笔数",
+			"type": "Integer",
+			"display": "yes"
+		},
+		"payAmount": {
+			"title": "交易总金额",
+			"type": "Integer",
+			"display": "yes"
+		},
+		"payPoundage": {
+			"title": "应收手续费",
+			"type": "Integer",
+			"display": "yes"
+		},
+		"refundCount": {
+			"title": "退款成功笔数",
+			"type": "Integer",
+			"display": "yes"
+		},
+		"refundAmount": {
+			"title": "退款总金额",
+			"type": "Integer",
+			"display": "yes"
+		},
+		"refundPoundage": {
+			"title": "应退手续费",
+			"type": "Integer",
+			"display": "yes"
+		},
+		"actualSettlementAmount": {
+			"title": "实际结算金额",
+			"type": "Integer",
+			"display": "yes"
+		}
+	},
+	"data": []
+}

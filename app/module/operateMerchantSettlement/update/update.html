@@ -1,0 +1,87 @@
+<link rel="stylesheet" href="_update.less?__inline" />
+
+<!-- <div class="row">
+    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+        <h1 class="page-title"><i ng-if="titleIcon" class="fa-fw fa {{titleIcon}}"></i> {{title}} </h1>
+    </div>
+</div> -->
+
+<div class="modal-header">
+    <a href="javascript:void(0)" ng-click="$dismiss('cancel')" class="modal-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <h3 class="modal-title"><i ng-if="titleIcon" class="fa-fw fa {{titleIcon}}"></i>{{title}}</h3>
+</div>
+
+<div class="thumbnail">
+    <form name="searchForm" 
+        class="form-horizontal add-estate-form"
+        ng-submit="submit($event)" 
+        method="post" 
+       
+        enctype="multipart/form-data"
+        novalidate>
+        <div class="row" ng-if="modalType==1">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">提现流水号</label>
+                <div class="col-sm-8">
+                    {{settlement.msId}}
+                </div>
+                <input type="hidden" name="msId" value="{{settlement.msId}}">
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">结算日期</label>
+                <div class="col-sm-8">
+                    {{settlement.msDate}}
+                </div>
+            </div>
+            
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">商户名</label>
+                <div class="col-sm-8">
+                    {{settlement.merchantName}}
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">商户号</label>
+                <div class="col-sm-8">
+                    {{settlement.merchantId}}
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">结算周期</label>
+                <div class="col-sm-8">
+                    {{settlement.settlePeriod}}
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">结算金额</label>
+                <div class="col-sm-8">
+                    {{settlement.actualSettleAmount}}
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">结算状态</label>
+                <div class="col-sm-8">
+                    <mi-select options="[{value: 'SETTLE_SUCCESS', name:'结算成功'}, {value: 'SETTLE_FAIL', name: '结算失败'}]" value="settlement.settleStatus"></mi-select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label"></label>
+                <div class="col-sm-8">
+                    <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-refresh"></i>提交更新</button>
+                </div>
+            </div>
+        </div>
+        <div class="row payway" ng-if="modalType==2">
+            <label ng-repeat="item in accounts track by $index">{{item.name}}<input type="radio" name="radio" ng-model="accountsResult.modal"  value="{{item.value}}" ng-checked="$index==0"></label>
+        </div>
+        <div class="modal-footer"> 
+            <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-refresh"></i>提交</button>
+        </div>
+        </form>
+</div>

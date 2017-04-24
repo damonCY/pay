@@ -1,0 +1,47 @@
+{
+    "code": 0,
+    "msg": "SUCCESS",
+    "metadata": {
+        "platformType": {
+            "title": "",
+            "type": "String",
+            "display": "yes"
+        },
+        "payCount": {
+            "title": "入款笔数",
+            "type": "Integer",
+            "display": "yes"
+        },
+        "payAmount": {
+            "title": "入款金额",
+            "type": "String",
+            "display": "yes"
+        },
+        "refundCount": {
+            "title": "出款笔数",
+            "type": "Integer",
+            "display": "yes"
+        },
+        "refundAmount": {
+            "title": "出款金额",
+            "type": "String",
+            "display": "yes"
+        }
+    },
+    "data": [
+        {
+            "platformType": "统一收银台",
+            "payCount": 20,
+            "payAmount": "2.00",
+            "refundCount": 1,
+            "refundAmount": "0.03"
+        },
+        {
+            "platformType": "现金收银台",
+            "payCount": 50,
+            "payAmount": "4.00",
+            "refundCount": 3,
+            "refundAmount": "0.15"
+        }
+    ]
+}

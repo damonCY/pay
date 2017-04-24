@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="_detail.less?__inline" />
+
+<!-- <div class="row">
+	<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+		<h1 class="page-title"><i ng-if="titleIcon" class="fa-fw fa {{titleIcon}}"></i> {{title}} </h1>
+	</div>
+</div> -->
+
+<div class="modal-header">
+    <a href="javascript:void(0)" ng-click="$dismiss('cancel')" class="modal-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <h3 class="modal-title">{{title}}</h3>
+</div>
+
+<div class="thumbnail">
+	<form name="searchForm" 
+        class="form-horizontal add-estate-form"
+        ng-submit="search($event)" 
+        method="post" 
+       
+        enctype="multipart/form-data"
+        novalidate>
+        <div class="row">
+            <div class="form-group" ng-repeat="bizDetail in bizDetailList">
+                <label class="col-sm-2 control-label">{{bizDetail.name}}</label>
+                <div class="col-sm-8">
+                    {{bizDetail.value}}
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="modal-footer">
+    <button type="submit" class="btn btn-primary btn-sm" ng-click="$dismiss('cancel')">关闭</button>
+</div>

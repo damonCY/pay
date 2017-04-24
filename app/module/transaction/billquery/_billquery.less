@@ -1,0 +1,43 @@
+.thumbnail{
+	.thumbnail-title{
+	font-size: 20px;
+	padding-bottom: 17px;
+	border-bottom: 1px solid #666;
+	}
+	.item-select{
+		font-size: 20px;
+		display: inline-block;
+		float: none;
+		margin: 0 10px;
+	}
+	.billtable,.billcontent{
+		ul{
+			list-style: none;
+			
+			li{
+				display: -webkit-flex; /* Safari */
+				display: flex;
+				flex-flow: row || nowrap;
+				justify-content: space-around;
+				span{
+					display: block;
+					padding: 10px 20px;
+					text-align: left;
+					min-width: 150px;
+				}
+			}
+		}
+		.nodata{
+			text-decoration: none;
+			color: #666;
+		}
+	}
+	.billcontent{
+		ul{
+			justify-content: center;
+		}
+		li{
+			padding: 10px 30px;
+		}
+	}
+}

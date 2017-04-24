@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="_voucher.less?__inline" />
+<div class="row">
+	<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+		<h1 class="page-title"><i ng-if="titleIcon" class="fa-fw fa {{titleIcon}}"></i> {{title}} </h1>
+	</div>
+</div>
+
+<div class="thumbtable">
+	<div class="thumbnail">
+		<form name="searchForm" 
+        class="form-horizontal add-estate-form"
+        ng-submit="search($event)" 
+        method="post" 
+       
+        enctype="multipart/form-data"
+        novalidate>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">
+                结算日期</label>
+                <div>
+                    <div class="item-col"><mi-datepicker id="startDate" prefix="开始" time="queryParams.startDate" format="yyyy-MM-dd"></mi-datepicker></div>
+                    <div class="item-col">-</div>
+                    <div class="item-col"><mi-datepicker id="endDate" prefix="结束" time="queryParams.endDate" format="yyyy-MM-dd"></mi-datepicker></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">状态</label>
+                <div class="item-body">
+                    <mi-select options="statusOptions" value="queryParams.settleStatus"></mi-select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-1 control-label">
+                会计凭证号</label>
+                <div class="col-sm-10">
+                    <div class="item-body">
+                        <input type="text" class="form-control" ng-model="queryParams.accountingVoucherNo" maxlength="32" placeholder="证号"/>
+                    </div>
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-1 control-label">
+                申请人</label>
+                <div class="col-sm-10">
+                    <div class="item-body">
+                        <input type="text" class="form-control" ng-model="queryParams.applicant" maxlength="32" placeholder="申请人"/>
+                    </div>
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label"></label>
+                <div class="item-body">
+                    <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-search"></i>查询</button>
+                </div>
+            </div>
+        </form>
+
+	</div>
+</div>
+<div class="thumbtable">
+    <table mi-bs-table="miBsTable"></table>
+</div>

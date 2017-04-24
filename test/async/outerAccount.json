@@ -1,0 +1,21 @@
+[
+    {
+        "accountDate": 20160829,
+        "creditAccum": 365227110.17,
+        "creditAmount": 242673.77,
+        "creditBeginBalance": 1130772.9,
+        "creditEndBalance": 1065404.44,
+        "creditNumber": 9494,
+        "creditNumberBegin": 8019593,
+        "creditNumberEnd": 8029087,
+        "debitAccum": 364161705.73,
+        "debitAmount": 308042.23,
+        "debitBeginBalance": 0,
+        "debitEndBalance": 0,
+        "debitNumber": 9204,
+        "debitNumberBegin": 7181000,
+        "debitNumberEnd": 7190204,
+        "ledger": "20010010011000000000001",
+        "tag": "normal"
+    }
+]

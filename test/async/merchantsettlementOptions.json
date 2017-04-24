@@ -1,0 +1,124 @@
+{
+    "code": 0,
+    "msg": "SUCCESS",
+    "data": {
+        "merchants": [
+            {
+                "name": "全部",
+                "value": "0"
+            },
+            {
+                "name": "米科—小米移动",
+                "value": "1000000035"
+            },
+            {
+                "name": "虚SIM流量",
+                "value": "1000000044"
+            },
+            {
+                "name": "宏源-小米保险",
+                "value": "1000000048"
+            },
+            {
+                "name": "杨军龙11111",
+                "value": "1000000050"
+            },
+            {
+                "name": "米移-小米营销",
+                "value": "1000000083"
+            },
+            {
+                "name": "话费充值1234",
+                "value": "1000000319"
+            },
+            {
+                "name": "小米保险",
+                "value": "1000003248"
+            },
+            {
+                "name": "路由器111",
+                "value": "1000003438"
+            },
+            {
+                "name": "小米营销",
+                "value": "1000003558"
+            },
+            {
+                "name": "测试",
+                "value": "10000078"
+            },
+            {
+                "name": "电话加油包",
+                "value": "10000079"
+            },
+            {
+                "name": "小米漫游",
+                "value": "10000091"
+            },
+            {
+                "name": "游戏充值",
+                "value": "10000094"
+            },
+            {
+                "name": "智能家居",
+                "value": "10000096"
+            }
+        ],
+        "settleStatus": [
+            {
+                "name": "全部",
+                "value": "0"
+            },
+            {
+                "name": "待结算",
+                "value": "WAIT_SETTLE"
+            },
+            {
+                "name": "结算成功",
+                "value": "SETTLE_SUCCESS"
+            },
+            {
+                "name": "结算失败",
+                "value": "SETTLE_FAIL"
+            }
+        ],
+        "checkStatus": [
+            {
+                "name": "全部",
+                "value": "0"
+            },
+            {
+                "name": "待复核",
+                "value": "WAIT_CHECK"
+            },
+            {
+                "name": "已通过",
+                "value": "CHECK_SUCCESS"
+            },
+            {
+                "name": "已拒绝",
+                "value": "CHECK_FAIL"
+            }
+        ],
+        "updateStatus": [
+            {
+                "name": "结算成功",
+                "value": "SETTLE_SUCCESS"
+            },
+            {
+                "name": "结算失败",
+                "value": "SETTLE_FAIL"
+            }
+        ],
+        "accounts": [
+            {
+                "name": "支付宝",
+                "value": "MINET10101"
+            },
+            {
+                "name": "微信_实体",
+                "value": "WEIXIN10101"
+            }
+        ]
+    }
+}

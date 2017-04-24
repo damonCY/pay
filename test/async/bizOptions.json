@@ -1,0 +1,158 @@
+{
+    "code": 0,
+    "msg": "SUCCESS",
+    "data": {
+        "merchants": [{
+            "name": "虚SIM流量",
+            "value": "1000000044"
+        },
+        {
+            "name": "杨军龙11111",
+            "value": "1000000050"
+        },
+        {
+            "name": "话费充值",
+            "value": "1000000319"
+        },
+        {
+            "name": "路由器111",
+            "value": "1000003438"
+        },
+        {
+            "name": "流量购买",
+            "value": "10000078"
+        },
+        {
+            "name": "电话加油包",
+            "value": "10000079"
+        },
+        {
+            "name": "小米漫游",
+            "value": "10000091"
+        },
+        {
+            "name": "游戏充值",
+            "value": "10000094"
+        },
+        {
+            "name": "智能家居",
+            "value": "10000096"
+        }],
+        "bizTypes": [{
+            "name": "交易",
+            "value": "TRADE",
+            "bizStatuss": [{
+                "name": "全部交易",
+                "value": "TRADE_ALL"
+            },
+            {
+                "name": "等待付款",
+                "value": "WAIT_PAY"
+            },
+            {
+                "name": "付款成功",
+                "value": "TRADE_SUCCESS"
+            },
+            {
+                "name": "交易取消",
+                "value": "TRADE_CANCEL"
+            },
+            {
+                "name": "交易关闭",
+                "value": "TRADE_CLOSED"
+            }],
+                "bizIds": [
+                    {
+                        "name": "UPAY订单号",
+                        "value": "TRADE_ID"
+                    },
+                    {
+                        "name": "商户订单号",
+                        "value": "OUT_ORDER_ID"
+                    },
+                    {
+                        "name": "机构订单号",
+                        "value": "INNER_ORDER_ID"
+                    },
+                    {
+                        "name": "第三方订单号",
+                        "value": "CHANNEL_PAY_NO"
+                    }
+                ]
+        },
+        {
+            "name": "退款",
+            "value": "REFUND",
+            "bizStatuss": [{
+                "name": "全部退款",
+                "value": "REFUND_ALL"
+            },
+            {
+                "name": "申请退款",
+                "value": "APPLY_REFUND"
+            },
+            {
+                "name": "退款成功",
+                "value": "REFUND_SUCCESS"
+            }],
+            "bizIds": [
+                    {
+                        "name": "UPAY订单号",
+                        "value": "REFUND_ORDER_ID"
+                    },
+                    {
+                        "name": "商户订单号",
+                        "value": "PARTNER_REFUND_ID"
+                    },
+                    {
+                        "name": "原商户订单号",
+                        "value": "OUT_ORDER_ID"
+                    },
+                    {
+                        "name": "原UPAY订单号",
+                        "value": "TRADE_ID"
+                    },
+                    {
+                        "name": "原机构订单号",
+                        "value": "INNER_ORDER_ID"
+                    }
+                ]
+        },
+        {
+            "name": "出款",
+            "value": "SETTLE",
+            "bizStatuss": [{
+                "name": "全部结算",
+                "value": "SETTLE_ALL"
+            },
+            {
+                "name": "待结算",
+                "value": "WAIT_SETTLE"
+            },
+            {
+                "name": "结算成功",
+                "value": "SETTLE_SUCCESS"
+            },
+            {
+                "name": "结算失败",
+                "value": "SETTLE_FAIL"
+            }]
+        }],
+        "timeTypes": [{
+            "name": "创建时间",
+            "value": "TIME_TYPE_BIZ_CREATE"
+        },
+        {
+            "name": "完成时间",
+            "value": "TIME_TYPE_BIZ_DONE"
+        }],
+        "accounts": [{
+            "name": "全部",
+            "value": 0
+        },
+        {
+            "name": "支付宝",
+            "value": 2
+        }]
+    }
+}

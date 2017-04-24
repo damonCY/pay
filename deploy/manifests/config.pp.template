@@ -1,0 +1,36 @@
+class base {
+  $basedir = "$<path>"
+  $user = "$< user >"
+  $mod_ver = "$< version >"
+  $pkg_dir = "$<pkg_dir>"
+  $mod_name = "$< name >"
+  $tag = "$< tag >"
+
+  $prog_name = "upay-admin-front"
+  $log_dir = "/home/work/log/${prog_name}"
+  $mod_proc_log = "${log_dir}/${prog_name}.log"
+  $to_email = ""
+  $mod_start = "sleep 100000h"
+  #$mod_stop = ""
+  #$mod_pid_cmd = ""
+  $run_dir = "${basedir}"
+  $run_env=""
+  $mod_run_log = "${basedir}/run.log"
+}
+
+class c3 inherits base {
+}
+
+class production-lg inherits base {
+}
+
+class staging inherits base {
+}
+
+class preview inherits base {
+}
+
+class onebox inherits base {
+}
+
+class config inherits $<env> {}

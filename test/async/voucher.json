@@ -1,0 +1,84 @@
+{
+    "code": 0,
+    "msg": "SUCCESS",
+    "metadata": {
+        "importDate": {
+            "title": "录入日期",
+            "type": "String",
+            "display": "yes"
+        },
+        "accountingVoucherNo": {
+            "title": "会计凭证号",
+            "type": "String",
+            "display": "yes"
+        },
+        "debitInfo": {
+            "title": "借方信息",
+            "type": "String",
+            "display": "yes"
+        },
+        "creditInfo": {
+            "title": "贷方信息",
+            "type": "String",
+            "display": "yes"
+        },
+        "comments": {
+            "title": "备注",
+            "type": "Integer",
+            "display": "yes"
+        },
+        "applicant": {
+            "title": "申请人",
+            "type": "String",
+            "display": "yes"
+        },
+        "checker": {
+            "title": "复核人",
+            "type": "String",
+            "display": "yes"
+        },
+        "checkStatus": {
+            "title": "状态",
+            "type": "Integer",
+            "display": "yes"
+        }
+    },
+    "data": [
+        {
+            "importDate": "2016-12-02",
+            "accountingVoucherNo": "20160930140725919031020300880454",
+            "debitInfo": {
+                "accountName": "银行存款-建设银行-建设银行8777",
+                "accountNo": "10010020010101",
+                "fee": "120.25",
+                "subject": "银行存款-建设银行-建设银行8777"
+            },
+            "creditInfo": {
+                "accountName": "银行存款-招商银行0868",
+                "accountNo": "10010030010101",
+                "fee": "120.25",
+                "subject": "银行存款-招商银行0868"
+            },
+            "comments": "备注信息",
+            "applicant": {
+                "name": "zhangsan",
+                "applicationTime": "2016-12-02 10:00:00"
+            },
+            "checker": {
+                "name": "lisi",
+                "applicationTime": "2016-12-02 14:00:00"
+            },
+            "checkStatus": "已通过",
+            "operate1": [
+                {
+                    "name": "通过",
+                    "action": "accounting/voucher/check"
+                },
+                {
+                    "name": "拒绝",
+                    "action": "accounting/voucher/refuse"
+                }
+            ]
+        }
+    ]
+}

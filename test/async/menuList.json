@@ -1,0 +1,188 @@
+{
+    "code": 0,
+    "msg": "SUCCESS",
+    "data": {
+        "menuList": [
+            {
+                "code": "reconcileManagement",
+                "name": "对账",
+                "icon": "fa-university",
+                "url": "#",
+                "child": [
+                    {
+                        "code": "summaryAccountQuery",
+                        "name": "支付宝账务汇总",
+                        "icon": "",
+                        "url": "/summaryaccount/query"
+                    },
+                    {
+                        "code": "reconcileQuery",
+                        "name": "对账查看",
+                        "icon": "",
+                        "url": "/reconcile/query"
+                    },
+                    {
+                        "code": "needRepair",
+                        "name": "补单查看",
+                        "icon": "",
+                        "url": "/reconcile/needRepair"
+                    }
+                ]
+            },
+            {
+                "code": "merchantSettlement",
+                "name": "出款",
+                "icon": "fa-jpy",
+                "url": "#",
+                "child": [
+                    {
+                        "code": "operateMerchantSettlement",
+                        "name": "现金结算经办",
+                        "icon": "",
+                        "url": "/merchantsettlement/queryforhandle"
+                    },
+                    {
+                        "code": "checkMerchantSettlement",
+                        "name": "现金结算复核",
+                        "icon": "",
+                        "url": "/merchantsettlement/queryforcheck"
+                    }
+                ]
+            },
+            {
+                "code": "reportManagement",
+                "name": "商户报表",
+                "icon": "fa-bar-chart",
+                "url": "#",
+                "child": [
+                    {
+                        "code": "costReport",
+                        "name": "成本报表",
+                        "icon": "",
+                        "url": "/costReport/query"
+                    },
+                    {
+                        "code": "incomeReport",
+                        "name": "收入报表",
+                        "icon": "",
+                        "url": "/incomeReport/query"
+                    },
+                    {
+                        "code": "merchantReport",
+                        "name": "商户报表",
+                        "icon": "",
+                        "url": "/machantreconcile/query"
+                    }
+                ]
+            },
+            {
+                "code": "balance",
+                "name": "清结算报表",
+                "icon": "fa-bar-chart",
+                "url": "#",
+                "child": [
+                    {
+                        "code": "balance.summary",
+                        "name": "试算平衡表",
+                        "icon": "",
+                        "url": "/balance/summary"
+                    },
+                    {
+                        "code": "balance.title",
+                        "name": "科目余额表",
+                        "icon": "",
+                        "url": "/balance/title"
+                    },
+                    {
+                        "code": "balance.account",
+                        "name": "账户余额表(内部)",
+                        "icon": "",
+                        "url": "/balance/account"
+                    },
+                    {
+                        "code": "balance.outeraccount",
+                        "name": "账户余额表(外部)",
+                        "icon": "",
+                        "url": "/balance/outeraccount"
+                    },
+                    {
+                        "code": "balance.assetEquation",
+                        "name": "账户恒等式",
+                        "icon": "",
+                        "url": "/balance/assetEquation"
+                    }
+                ]
+            },
+            {
+                "code": "bizManagement",
+                "name": "查询",
+                "icon": "fa-search",
+                "url": "#",
+                "child": [
+                    {
+                        "code": "bizQuery",
+                        "name": "交易查询",
+                        "icon": "",
+                        "url": "/biz/query"
+                    },
+                    {
+                        "code": "billQuery",
+                        "name": "账单查询",
+                        "icon": "",
+                        "url": "/bill/query"
+                    }
+                ]
+            },
+            {
+                "code": "accounting",
+                "name": "登账",
+                "icon": "fa-bar-chart",
+                "url": "#",
+                "child": [
+                    {
+                        "code": "accounting.account",
+                        "name": "凭证录入",
+                        "icon": "",
+                        "url": "/accounting/account"
+                    },
+                    {
+                        "code": "accounting.voucher",
+                        "name": "凭证复核",
+                        "icon": "",
+                        "url": "/accounting/voucher"
+                    },
+                    {
+                        "code": "accounting.query",
+                        "name": "凭证查询",
+                        "icon": "",
+                        "url": "/accounting/query"
+                    }
+
+                ]
+            },
+            {
+                "code": "merchantManagement",
+                "name": "商户设置",
+                "icon": "fa-cog",
+                "url": "#",
+                "child": [
+                    {
+                        "code": "merchantUpdate",
+                        "name": "商户信息设置",
+                        "icon": "",
+                        "url": "/merchant/queryall"
+                    },
+                    {
+                        "code": "merchantSupplierUpdate",
+                        "name": "商户供应商设置",
+                        "icon": "",
+                        "url": "/merchantsupplier/queryall"
+                    }
+                ]
+            }
+        ],
+        "userInfo": {
+            "userName": "ceshi"
+        }
+    }
+}

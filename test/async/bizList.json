@@ -1,0 +1,88 @@
+{
+    "code": 0,
+    "msg": "SUCCESS",
+    "metadata": {
+        "bizType": {
+            "title": "业务类型",
+            "type": "String",
+            "display": "yes"
+        },
+        "merchantName": {
+            "title": "商户名称",
+            "type": "String",
+            "display": "yes"
+        },
+        "merchantId": {
+            "title": "商户号",
+            "type": "String",
+            "display": "no"
+        },
+        "accountDesc": {
+            "title": "支付渠道",
+            "type": "String",
+            "display": "yes"
+        },
+        "finishTime": {
+            "title": "交易时间",
+            "type": "String",
+            "display": "yes"
+        },
+        "bizId": {
+            "title": "订单号",
+            "type": "String",
+            "display": "yes"
+        },
+        "rawBizId": {
+            "title": "原订单号",
+            "type": "String",
+            "display": "yes"
+        },
+        "bizAmount": {
+            "title": "订单金额",
+            "type": "String",
+            "display": "yes"
+        },
+        "bizRefundAmount": {
+            "title": "退款金额",
+            "type": "String",
+            "display": "yes"
+        },
+        "bizStatus": {
+            "title": "处理状态",
+            "type": "String",
+            "display": "yes"
+        },
+        "checkStatus": {
+            "title": "复核状态",
+            "type": "String",
+            "display": "yes"
+        },
+        "operate1": {
+            "title": "",
+            "type": "button",
+            "display": "yes"
+        }
+    },
+    "data": {
+        "list": [{
+            "bizType": "交易",
+            "merchantName": "话费充值话费充值222",
+            "merchantId": "1000000319",
+            "accountDesc": "支付宝",
+            "finishTime": "2016-07-26 18:44:21",
+            "bizId": "20160726184350456025020300880068",
+            "rawBizId": "20160726184350269007020300882210",
+            "bizAmount": "1.00",
+            "bizRefundAmount": "0.00",
+            "bizStatus": "付款成功",
+            "checkStatus": "--",
+            "operate1": [{
+                "name": "详情",
+                "action": "#/biz/detail/20160726184350456025020300880068"
+            }]
+        }],
+        "totalSize": 123,
+        "pageNo": 1,
+        "pageSize": 20
+    }
+}

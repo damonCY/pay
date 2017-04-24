@@ -1,0 +1,41 @@
+/**
+ * 出款-现金结算经办
+ * 
+ * @author  Yang,junlong at 2016-08-09 15:19:36 build.
+ * @version $Id$
+ */
+.transaction {
+	.form-group .control-label {
+		width: 100px;
+	}
+}
+
+.import-file {
+	display: inline-block;
+	position: relative;
+}
+.upload-file {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+	filter:alpha(opacity=0);
+    -moz-opacity:0;
+	opacity:0;
+	cursor: pointer;
+	outline: none;
+	width: 120px;
+	&:focus{
+   		outline: none;
+	}
+}
+.upload-progress {
+	position: absolute;
+    bottom: -7px;
+    width: 100%;
+    .progress {
+    	height: 4px;
+    }
+}

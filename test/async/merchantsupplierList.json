@@ -1,0 +1,87 @@
+{
+    "code": 0,
+    "msg": "SUCCESS",
+    "metadata": {
+        "merchantName": {
+            "title": "商户名称",
+            "type": "String",
+            "display": "yes"
+        },
+        "merchantId": {
+            "title": "商户号",
+            "type": "String",
+            "display": "no"
+        },
+        "supplierName": {
+            "title": "供应商名称",
+            "type": "String",
+            "display": "yes"
+        },
+        "supplierId": {
+            "title": "供应商编号",
+            "type": "Integer",
+            "display": "yes"
+        },
+        "settlePeriod": {
+            "title": "结算周期",
+            "type": "String",
+            "display": "yes"
+        },
+        "operate1": {
+            "title": "",
+            "type": "button",
+            "display": "yes"
+        },
+        "companyBankName": {
+            "title": "开户行",
+            "type": "String",
+            "display": "no"
+        },
+        "companyBankNo": {
+            "title": "收款人帐号",
+            "type": "String",
+            "display": "no"
+        },
+        "companyBankCardOwner": {
+            "title": "收款人户名",
+            "type": "String",
+            "display": "no"
+        }
+    },
+    "data": [{
+        "merchantName": "话费充值",
+        "merchantId": "1000000319",
+        "supplierName": "北京高阳捷迅信息技术有限公司",
+        "supplierId": 201,
+        "settlePeriod": "T+3",
+        "operate1": [{
+            "name": "详情",
+            "action": "#/merchantsupplier/detail?supplierId=201"
+        },
+        {
+            "name": "修改",
+            "action": "#/merchantsupplier/update?supplierId=201"
+        }],
+        "companyBankName": "招商银行北京海淀支行",
+        "companyBankNo": "444444444444444444",
+        "companyBankCardOwner": "北京高阳捷迅信息技术有限公司"
+    },
+    {
+        "merchantName": "话费充值",
+        "merchantId": "1000000319",
+        "supplierName": "北京实立畅想电子商务有限公司",
+        "supplierId": 202,
+        "settlePeriod": "T+2",
+        "operate1": [{
+            "name": "详情",
+            "action": "#/merchantsupplier/detail?supplierId=202"
+        },
+        {
+            "name": "修改",
+            "action": "#/merchantsupplier/update?supplierId=202"
+        }],
+        "companyBankName": "中国建设银行北京城市建设开发专业支行",
+        "companyBankNo": "11001008500053010846",
+        "companyBankCardOwner": "北京实立畅想电子商务有限公司"
+    }]
+}

@@ -1,0 +1,66 @@
+{
+    "code": 0,
+    "msg": "SUCCESS",
+    "metadata": {
+        "billDate": {
+            "title": "日期",
+            "type": "String",
+            "display": "yes"
+        },
+        "income": {
+            "title": "收入",
+            "type": "String",
+            "display": "yes"
+        },
+        "outcome": {
+            "title": "支出",
+            "type": "String",
+            "display": "yes"
+        }
+    },
+    "data": {
+        "monthlyBill": {
+            "billList": [
+                {
+                    "billDate": "24",
+                    "incomeFile": "",
+                    "outcomeFile": "https://cdn.fds-ssl.api.xiaomi.com/upay-merchant/output1000000044-20161124.csv"
+                },
+                {
+                    "billDate": "25",
+                    "incomeFile": "",
+                    "outcomeFile": "https://cdn.fds-ssl.api.xiaomi.com/upay-merchant/output1000000044-20161125.csv"
+                },
+                {
+                    "billDate": "26",
+                    "incomeFile": "https://cdn.fds-ssl.api.xiaomi.com/upay-merchant/input1000000044-20161126.csv",
+                    "outcomeFile": "https://cdn.fds-ssl.api.xiaomi.com/upay-merchant/output1000000044-20161126.csv"
+                }
+            ]
+        },
+        "dailyBill": {
+            "billList": [
+                {
+                    "billDate": "24",
+                    "incomeFile": "",
+                    "outcomeFile": ""
+                },
+                {
+                    "billDate": "25",
+                    "incomeFile": "https://cdn.fds-ssl.api.xiaomi.com/upay-merchant/input1000000044-20161125.csv",
+                    "outcomeFile": "https://cdn.fds-ssl.api.xiaomi.com/upay-merchant/output1000000044-20161125.csv"
+                },
+                {
+                    "billDate": "26",
+                    "incomeFile": "https://cdn.fds-ssl.api.xiaomi.com/upay-merchant/input1000000044-20161126.csv",
+                    "outcomeFile": "https://cdn.fds-ssl.api.xiaomi.com/upay-merchant/output1000000044-20161126.csv"
+                },
+                {
+                    "billDate": "27",
+                    "incomeFile": "https://cdn.fds-ssl.api.xiaomi.com/upay-merchant/input1000000044-20161127.csv",
+                    "outcomeFile": "https://cdn.fds-ssl.api.xiaomi.com/upay-merchant/output1000000044-20161127.csv"
+                }
+            ]
+        }
+    }
+}

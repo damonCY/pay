@@ -1,0 +1,64 @@
+<div class="row">
+	<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+		<h1 class="page-title"><i ng-if="titleIcon" class="fa-fw fa {{titleIcon}}"></i> {{title}} </h1>
+	</div>
+</div>
+
+<div class="thumbnail">
+	<form name="searchForm" 
+        class="form-horizontal add-estate-form"
+        ng-submit="search($event)" 
+        method="post" 
+       
+        enctype="multipart/form-data"
+        novalidate>
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">
+                交易日期</label>
+                <div class="col-sm-10">
+                    <div class="item-col"><mi-datepicker id="startDate" prefix="开始" time="queryParams.startDate" format="yyyy-MM-dd"></mi-datepicker></div>
+                    <div class="item-col">-</div>
+                    <div class="item-col"><mi-datepicker id="endDate" prefix="结束" time="queryParams.endDate" format="yyyy-MM-dd"></mi-datepicker></div>
+                    <!-- <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-download"></i>导出</button> -->
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">
+                商户选择</label>
+                <div class="col-sm-10">
+                    <div class="item-col"><mi-select options="merchantsOptions" value="queryParams.merchantId"></mi-select></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">渠道选择</label>
+                <div class="col-sm-10">
+                    <div class="item-col"><mi-select options="accountsOpions" value="queryParams.accountId"></mi-select></div>
+                        <div class="item-col">
+                            <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-search"></i>查询</button>
+                        </div>
+                    <button ng-click="export($event)" class="btn btn-primary btn-sm"><i class="fa fa-download"></i>导出</button>
+                </div>
+            </div>
+        </div>
+        </form>
+</div>
+
+<div class="tablearea">
+	<table class="table table-hover table-striped">
+		<thead>
+			<tr>
+				<th ng-if="head.display == 'yes'" ng-repeat="head in tableHead">{{head.title}}</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="body in tableBody">
+                <td ng-if="head.display == 'yes'" ng-repeat="head in tableHead">
+                    <span>{{body[head.name]}}</span>
+                    
+                </td>
+            </tr>
+		</tbody>
+	</table>
+</div>

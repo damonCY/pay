@@ -1,0 +1,1 @@
+{"code":0,"msg":"SUCCESS","data":{"merchantId":"10000079","merchantName":"电话加油包","feeRate":"0.5%","settlePeriod":"T+3","enableMonthlySettle":"否","operate1":[{"name":"详情","action":"#/merchant/detail/10000079"},{"name":"修改","action":"#/merchant/update/10000079"}],"companyBankName":"招商银行北京首体支行","companyBankNo":"110908423010701","companyBankCardOwner":"北京小米移动软件有限公司"}}
